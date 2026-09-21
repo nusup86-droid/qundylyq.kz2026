@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#063f46">
+<meta name="description" content="QÚNDYLYQ — ұлттық құндылықтарды танып, түсініп, таңдауға, әрекет етуге және өз үлесін қосуға арналған интерактивті цифрлық орта.">
+<title>QÚNDYLYQ — Тамыры терең елдің тұғыры биік!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Noto+Serif:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<div class="topline"><span>QÚNDYLYQ</span><span>ТАНЫ · БІЛ · ОЙЛАН · ТАҢДА · ЖАСА · БӨЛІС</span></div>
+<div class="ornament-rail rail-left"></div><div class="ornament-rail rail-right"></div>
+<header class="header" id="header">
+  <a class="brand" href="#home"><span class="brand-mark">✧</span><span><strong>QÚNDYLYQ</strong><small>ұлттық құндылықтың цифрлық кеңістігі</small></span></a>
+  <nav id="nav"><a href="#values">Құндылықтар</a><a href="#abai">Абай өсиеттері</a><a href="#dictionary">Сөздік</a><a href="#choice">Таңдау</a><a href="#family">Отбасы</a><a href="#diary">Күнделік</a><a href="#practice">Іс жүзінде</a><a href="#ideas">Менің идеям</a></nav>
+  <div class="head-actions"><button class="search-open" onclick="openSearch()">⌕ <span>Іздеу</span></button><button class="ghost" onclick="openProfile()">Профиль</button><button class="primary" onclick="openAI()">AI-QUNDY</button></div>
+  <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-bg-photo"></div>
+  <div class="hero-orbit orbit1"></div><div class="hero-orbit orbit2"></div>
+  <div class="hero-content">
+    <div class="eyebrow">ЦИФРЛЫҚ МӘДЕНИЕТ · ЖАСТАР · ҚҰНДЫЛЫҚ</div>
+    <h1>Тамыры терең елдің<br><em>тұғыры биік!</em></h1>
+    <p class="lead">Ұлттық құндылықтарды таны. Мағынасын түсін. Өз таңдауыңды жаса. Бүгінгі өмірде көрсет.</p>
+    <div class="hero-buttons"><button class="primary big" onclick="scrollToId('values')">Құндылықтарды зерттеу <span>→</span></button><button class="light big" onclick="scrollToId('ideas')">Менің идеям</button></div>
+    <div class="hero-note"><span>✧</span><span>Құндылық — өткеннің мұрасы ғана емес. Ол бүгінгі таңдаудан басталып, ертеңге жалғасады.</span></div>
+  </div>
+  <div class="hero-visual" aria-label="QÚNDYLYQ визуалы">
+    <img src="assets/hero-portrait.jpg" alt="Қазақ мәдениеті мен табиғатын бейнелейтін визуал">
+    <div class="hero-caption"><span>ҰЛТ · МӘДЕНИЕТ · БОЛАШАҚ</span><b>Өткенді танып, бүгінді бірге жасайық.</b></div>
+  </div>
+  <div class="hero-side">
+    <div class="hero-card ai-card"><div class="ai-avatar">Q</div><span>AI-QUNDY</span><b>Құндылық туралы сұра. Идеяңды дамыт. Сценарийіңді құрастыр.</b><button onclick="openAI()">AI-QUNDY-мен сөйлесу →</button></div>
+    <div class="mini-card"><small>БҮГІНГІ ҚАДАМ</small><strong id="dailyAction">Ата-әжеңнен бір отбасы дәстүрінің тарихын сұрап көр.</strong><button onclick="newDailyAction()">Жаңарту ↻</button></div>
+  </div>
+</section>
+<section class="stats"><div><b>09</b><span>ұлттық құндылық бағыты</span></div><div><b>30</b><span>quiz сұрағы</span></div><div><b>3</b><span>тәжірибелік бағыт</span></div><div><b>∞</b><span>идея мен сценарий</span></div></section>
+
+<section id="values" class="section">
+ <div class="section-head"><div class="section-kicker">01 · НЕГІЗ</div><div><span class="eyebrow">ӨТКЕН МЕН БҮГІНДІ ЖАЛҒАСТЫРАТЫН ҚҰНДЫЛЫҚТАР</span><h2>Ұлттық құндылықтар</h2><p>Ұлттық құндылықтар — халықтың тарихи жады, мәдениеті, тілі, дәстүрі, отбасы және рухани тәжірибесі арқылы ұрпақтан ұрпаққа жалғасатын мағыналар жүйесі.</p></div></div>
+ <div class="section-visual values-visual"><img src="assets/values-collage.jpg" alt="Ұлттық құндылықтар, тіл, өнер, тарих және туған жер тақырыптарының визуалды коллажы"><div><span>ҚҰНДЫЛЫҚТЫ КӨР · ТҮСІН · ЖАЛҒАСТЫР</span><strong>Әр құндылықтың бүгінгі өмірде өз көрінісі бар.</strong></div></div><div id="valueGrid" class="value-grid"></div>
+</section>
+
+<section class="section manifesto dark">
+ <div class="manifesto-inner"><div><div class="section-kicker">02 · БҮГІН</div><h2>Тамыры терең елдің<br><span>тұғыры биік!</span></h2></div><div><p>Ұлттық құндылықты сақтау — оны тек өткенмен байланыстыру емес. Оның ішкі мәнін түсініп, қазіргі өмірде жалғастыру, жаңа ұрпақтың тілімен жеткізу және нақты әрекетке айналдыру.</p><div class="chain"><span>ТАРИХ</span><i>→</i><span>МӘН</span><i>→</i><span>ТАҢДАУ</span><i>→</i><span>ӘРЕКЕТ</span><i>→</i><span>БОЛАШАҚ</span></div></div></div>
+</section>
+
+<section id="abai" class="section abai-section">
+ <div class="section-head"><div class="section-kicker">03 · АБАЙ</div><div><span class="eyebrow">ОЙ · ҒЫЛЫМ · ЕҢБЕК · АДАМГЕРШІЛІК</span><h2>Абай өсиеттері</h2><p>Сілтемелер арқылы Абай Құнанбайұлының өсиеттерімен, нақыл сөздерімен және жастарға арналған ой-толғамдарымен таныса аласыз.</p></div></div>
+ <div class="abai-hero">
+   <div class="abai-art"><div class="abai-monogram">А</div><span>АБАЙ ҚҰНАНБАЙҰЛЫ</span><strong>«Адам болам десеңіз...»</strong><small>Оқу · ойлану · іздену · әрекет ету</small></div>
+   <div class="abai-copy"><span class="source-badge">ТАНЫП · ОҚЫП · ОЙЛАН</span><h3>Абайдың мұрасы — бүгінгі жасқа да ой салатын рухани бағдар.</h3><p>Төмендегі ресурстардан Абай өсиеттерін, нақыл сөздерін, қара сөздері мен жастарға арналған материалдарды әртүрлі форматта оқып, көре аласыз.</p><div class="abai-tags"><span>📖 Мақала</span><span>💬 Нақыл сөздер</span><span>🎬 Видео</span><span>🌐 Цифрлық ресурс</span></div></div>
+ </div>
+ <div class="abai-links">
+   <a class="abai-link" target="_blank" rel="noopener" href="https://bilim-all.kz/article/24971"><span>01</span><div><b>Абай өсиеттері</b><small>Bilim-all.kz · мақала</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://maqat-tynysy.kz/zhanalyqtar/qogam/abajdyn-osieti-oskelen-urpaqtyn-ajnymas-temirqazygy.html"><span>02</span><div><b>Абайдың өсиеті — өскелең ұрпақтың темірқазығы</b><small>Maqat Tynysy · мақала</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://oinet.kz/e/action/ShowInfo.php?classid=15&amp;id=11510"><span>03</span><div><b>Абай өсиеттері</b><small>Oinet.kz · материал</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://www.youtube.com/shorts/0iW5KjDov0o"><span>04</span><div><b>Абай өсиеті</b><small>YouTube Shorts · видео</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://bilim-all.kz/figure/8?posts=thoughts"><span>05</span><div><b>Абайдың ойлары мен нақыл сөздері</b><small>Bilim-all.kz · дәйексөздер</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://bilimdiler.kz/oyin_sayk/paidaly-kenester/4055-abajdyn-osieti.html"><span>06</span><div><b>Абайдың өсиеті</b><small>Bilimdiler.kz · пайдалы кеңестер</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://www.zharar.com/index.php?do=shorttexts&amp;tag_id=13252"><span>07</span><div><b>Абайға қатысты қысқа мәтіндер</b><small>Zharar.com · жинақ</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://www.instagram.com/p/DcIBRI8oL_a/"><span>08</span><div><b>Абай өсиеттері</b><small>Instagram · жарияланым</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://kazislam.kz/2021/08/abajdyng-zhastargha-osieti/"><span>09</span><div><b>Абайдың жастарға өсиеті</b><small>Kazislam.kz · мақала</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://abay180.semeylib.kz/%D0%B0%D0%B1%D0%B0%D0%B9%D0%B4%D1%8B%D2%A3-%D2%9B%D0%B0%D0%BD%D0%B0%D1%82%D1%82%D1%8B-%D1%81%D3%A9%D0%B7%D0%B4%D0%B5%D1%80%D1%96/"><span>10</span><div><b>Абайдың қанатты сөздері</b><small>Semey Library · арнайы ресурс</small></div><i>↗</i></a>
+   <a class="abai-link" target="_blank" rel="noopener" href="https://kazneb.kz/kk/bookView/view?brId=1065100&amp;simple=true#"><span>11</span><div><b>Абай туралы цифрлық кітап қоры</b><small>ҚазҰЭК · кітап</small></div><i>↗</i></a>
+ </div>
+</section>
+
+<section id="dictionary" class="section dictionary-section">
+ <div class="section-head"><div class="section-kicker">04 · ТІЛ</div><div><span class="eyebrow">ТЕРМИНДІ ТАП · МӘНІН ТҮСІН · ҚОЛДАН</span><h2>Сөздік</h2><p>QÚNDYLYQ ішіндегі қысқа түсіндірмелермен бірге ресми терминологиялық базаға да өте аласың.</p></div></div>
+ <div class="dictionary-layout"><div class="dictionary-search"><label>Терминді іздеу</label><div class="search-row"><input id="dictInput" placeholder="Мысалы: аманат, бірлік, мәдениет..."><button class="primary" onclick="searchDict()">Іздеу</button></div><div id="dictResults" class="dict-results"></div></div><div class="source-card"><span class="source-badge">РЕСМИ ДЕРЕККӨЗ</span><h3>Termincom.kz</h3><p>Қазақ тіліндегі терминдерді іздеуге арналған Ұлттық терминологиялық база.</p><a class="primary linkbtn" target="_blank" rel="noopener" href="https://termincom.kz/search/?termin=%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0&cid=0&field=all&approved_first=1">Termincom-ға өту →</a></div></div>
+</section>
+
+<section id="choice" class="section choice-section">
+ <div class="choice-intro"><div class="section-kicker">05 · ТАҢДАУ</div><span class="eyebrow">ӨМІРЛІК ЖАҒДАЙ</span><h2>Сен не істер едің?</h2><p>Құндылықты білу — бастамасы. Нақты жағдайда оны қалай көрсететінің — сенің таңдауың.</p><div class="choice-path"><span>ЖАҒДАЙ</span><i>→</i><span>ОЙ</span><i>→</i><span>ТАҢДАУ</span><i>→</i><span>ӘРЕКЕТ</span></div></div>
+ <div class="scenario" id="scenarioBox"></div>
+</section>
+
+<section id="family" class="section family-section">
+ <div class="section-head"><div class="section-kicker">06 · ОТБАСЫ</div><div><span class="eyebrow">ҰРПАҚТАР САБАҚТАСТЫҒЫ</span><h2>ОТБАСЫ — ҚҰНДЫЛЫҚТАР МЕКТЕБІ</h2><p>Ата-әжелер мұра береді. Ата-аналар тәрбиелейді. Жас ұрпақ қабылдайды, таңдайды және жалғастырады.</p></div></div>
+ <div class="family-visual"><img src="assets/family-story.jpg" alt="Ұрпақтар сабақтастығын бейнелейтін отбасылық көрініс"><div><span>ҰРПАҚТАР САБАҚТАСТЫҒЫ</span><strong>Ата-әже → ата-ана → жас ұрпақ</strong><p>Мұра әңгімеден басталып, күнделікті әрекетте жалғасады.</p></div></div><div class="schools"><article class="school-card grandparents"><div class="school-icon">👵</div><div class="school-label">АТА-ӘЖЕЛЕР МЕКТЕБІ</div><h3>Өткеннің өнегесі — ұрпаққа аманат</h3><p>Ата-әженің әңгімесі — отбасы тарихын, салт-дәстүрді және өмірлік тәжірибені келесі ұрпаққа жеткізудің тірі жолы.</p><a class="primary linkbtn" target="_blank" rel="noopener" href="https://youtu.be/AVLSGAw7GEg?si=Qk2XL96WAfbVoVUb">▶ Бейнені көру</a></article>
+ <article class="school-card parents"><div class="school-icon">👨‍👩‍👧</div><div class="school-label">АТА-АНАЛАР МЕКТЕБІ</div><h3>Құндылықтың бастауы — отбасындағы тәрбие</h3><p>Күнделікті қарым-қатынас, қамқорлық, жауапкершілік, үлкенге құрмет және отбасылық дәстүр — құндылықтың бала өміріндегі алғашқы тәжірибесі.</p><button class="light" onclick="openParentSchool()">Бірге жасау →</button></article></div>
+ <div class="family-prompts"><button onclick="familyPrompt('Отбасылық дәстүр')">🏡 Отбасылық дәстүр</button><button onclick="familyPrompt('Ата-әже тарихы')">💬 Ата-әже тарихы</button><button onclick="familyPrompt('Біздің отбасымыздағы құндылық')">❤️ Біздің құндылығымыз</button></div>
+</section>
+
+<section id="diary" class="section diary-section">
+ <div class="section-head"><div class="section-kicker">07 · ӨЗІМДІ ДАМЫТУ</div><div><span class="eyebrow">ҰЛАҒАТҚЫЗЫ НҰРАЙДЫҢ КҮНДЕЛІГІНЕ ҮЛГІ</span><h2>Менің күнделігім</h2><p>Күн сайын өзіңнен есеп алып, мақсат қойып, үйренгеніңді, ойыңды және әрекетіңді тірке.</p></div></div>
+ <div class="diary-hero"><div class="diary-photo"><img src="assets/diary-journey.jpg" alt="Күнделік пен өзін дамыту идеясын бейнелейтін визуал"></div><div class="diary-quote"><div class="quote-mark">“</div><p>Күнінде бір мәртебе, болмаса жұмасында бір, ең болмаса айында бір, өзіңнен өзің есеп ал!</p><small>Абай Құнанбайұлы</small></div><div class="diary-author"><div class="author-badge">НҰРАЙ</div><h3>Ұлағатқызы Нұрай</h3><p>Күнделік үлгісіндегі негізгі идея: әр күнге мән беру, өзіңе есеп беру, білім алу және рухани өсу.</p><button class="primary" onclick="openDiaryDemo()">Күнделікті бастау →</button></div></div>
+ <div class="three-lenses"><article><span>01</span><h3>Танымдық</h3><p>Білемін → зерттеймін → түсінемін. Жаңа білім, тарих, тіл, мәдениет және құндылықтар туралы таным.</p></article><article><span>02</span><h3>Тәжірибелік</h3><p>Үйренемін → жасап көремін → нәтижеге жетемін. Білімді нақты тапсырма мен әрекетке айналдыру.</p></article><article><span>03</span><h3>Эмоционалдық-іс-әрекеттік</h3><p>Сезінемін → ойланамын → таңдаймын → әрекет етемін. Құндылықты жеке сезіммен байланыстырып, іс арқылы көрсету.</p></article></div>
+ <div class="diary-form"><div><label>Бүгінгі мақсатым</label><input id="diaryGoal" placeholder="Бүгін неге қол жеткізгім келеді?"></div><div><label>Бүгін не үйрендім?</label><textarea id="diaryLearn" placeholder="Бір ой, бір жаңалық..."></textarea></div><div><label>Менің бүгінгі әрекетім</label><textarea id="diaryAction" placeholder="Қандай құндылықты іс жүзінде көрсеттім?"></textarea></div><div><label>Менің ойым</label><textarea id="diaryThought" placeholder="Бүгін мен үшін маңызды болғаны..."></textarea></div><button class="primary" onclick="saveDiary()">Күнделігімді сақтау</button><div id="diarySaved" class="saved-line"></div></div>
+</section>
+
+<section id="practice" class="section practice-section">
+ <div class="section-head"><div class="section-kicker">08 · ІС ЖҮЗІНДЕ & МЕНІҢ ҮЛЕСІМ</div><div><span class="eyebrow">ҚҰНДЫЛЫҚТЫ НАҚТЫ ӘРЕКЕТКЕ АЙНАЛДЫР</span><h2>Іс жүзінде & менің үлесім</h2><p>Жастарға өз қаласындағы және Қазақстандағы пайдалы іс-шараларды бір жерден көруге, жоспарлауға және қатысқанын белгілеуге мүмкіндік беретін оқиғалар күнтізбесі.</p></div></div>
+ <div class="practice-visual"><img src="assets/practice-life.jpg" alt="Табиғат, қоғам және мәдениет бағыттарындағы белсенділік"><div><span>ІС → ТӘЖІРИБЕ → ҮЛЕС</span><strong>Құндылық әрекетке айналғанда ғана күнделікті өмірде көрінеді.</strong></div></div><div class="event-controls"><div class="month-control"><button onclick="changeMonth(-1)">←</button><strong id="monthTitle"></strong><button onclick="changeMonth(1)">→</button></div><div class="filters"><button class="filter active" data-cat="all">Барлығы</button><button class="filter" data-cat="nature">🌿 Табиғат</button><button class="filter" data-cat="society">🤝 Қоғам</button><button class="filter" data-cat="culture">🎨 Мәдениет</button></div></div>
+ <div id="calendar" class="calendar"></div><div class="event-note">ℹ️ Іс-шара карточкаларындағы <b>ресми дереккөз</b> сілтемелері арқылы уақыт пен қатысу шартын тексеруге болады. Күнтізбе құрылымы ресми дереккөздерден жаңартылатын форматқа дайындалған.</div>
+ <div class="my-events"><div><span class="eyebrow">МЕНІҢ КҮНТІЗБЕМ</span><h3>Жоспарлаған іс-шараларым</h3></div><div id="myEventsList" class="my-events-list"></div></div>
+</section>
+
+<section id="ideas" class="section ideas-section">
+ <div class="idea-hero"><div><div class="section-kicker">09 · МЕНІҢ ИДЕЯМ</div><h2>Ал мен бүгін?</h2><p>Идеяңды таңда немесе өзің жаз. <b>AI-QUNDY</b> оны біртіндеп дамытып, мақсатқа, жоспарға және сценарийге айналдыруға көмектеседі.</p></div><div class="idea-flow"><span>ИДЕЯ</span><i>→</i><span>МАҚСАТ</span><i>→</i><span>ЖОСПАР</span><i>→</i><span>СЦЕНАРИЙ</span><i>→</i><span>ӘРЕКЕТ</span></div></div>
+ <div class="idea-builder"><div class="idea-visual"><img src="assets/qundylyq-visual.jpg" alt="QÚNDYLYQ платформасының визуалды концепті"><div><span>AI-QUNDY · IDEA LAB</span><strong>Кішкентай ой — үлкен өзгерістің бастауы.</strong></div></div><div class="idea-input"><label>Дайын идеяны таңда</label><div class="idea-pills" id="ideaPills"></div><label>Немесе өз идеяңды жаз</label><textarea id="ideaText" placeholder="Мысалы: Әжемнің білетін дәстүрлері туралы жастарға арналған қысқа бейне жасағым келеді..."></textarea><div class="format-row"><label>Формат</label><select id="ideaFormat"><option>Reels</option><option>YouTube</option><option>Stories</option><option>Подкаст</option><option>Қысқа бейне</option><option>Фото/карусель</option><option>Мәтін</option></select><button class="primary" onclick="buildIdea()">AI-QUNDY-мен дамыту →</button></div></div><div class="idea-result" id="ideaResult"><div class="empty-ai"><div class="ai-avatar large">Q</div><h3>AI-QUNDY</h3><p>Идеяңды енгіз. Мен саған оның мәнін, мақсатын, құрылымын және сценарийін бірге жасаймын.</p></div></div></div>
+</section>
+
+<section class="section quiz-section"><div class="quiz-card"><div><div class="section-kicker">10 · QUIZ</div><h2>«Мен ұлттық құндылықтарды қаншалықты білемін?»</h2><p>30 сұрақ. Дәстүр, тіл, отбасы, мәдениет, тарих, цифрлық орта және күнделікті таңдау туралы.</p></div><button class="primary big" onclick="openQuiz()">Quiz бастау →</button></div></section>
+
+<section class="section community-section"><div class="section-head"><div class="section-kicker">11 · МЕНІҢ ҮЛЕСІМ</div><div><span class="eyebrow">БІРГЕ БӨЛІС · БІРГЕ ДАМЫТ</span><h2>Менің үлесім</h2><p>Бүгін жасаған әрекетіңді, идеяңды немесе отбасыңнан үйренген бір құндылықты жазып қалдыр.</p></div></div><div class="community-grid"><article class="contribution-card"><h3>Мен бүгін не істей аламын?</h3><textarea id="contribution" placeholder="Бүгінгі нақты әрекетім..."></textarea><button class="primary" onclick="saveContribution()">Өз үлесімді сақтау</button><div id="savedContribution"></div></article><div class="contribution-metrics"><div><b id="actionCount">0</b><span>менің әрекетім</span></div><div><b id="eventCount">0</b><span>жоспарланған іс-шара</span></div><div><b id="ideaCount">0</b><span>сақталған идея</span></div><div><b id="diaryCount">0</b><span>күнделік жазбасы</span></div></div></div></section>
+</main>
+
+<footer><div class="footer-brand">QÚNDYLYQ</div><p>Тамыры терең елдің тұғыры биік!</p><div class="footer-links"><a href="#values">Құндылықтар</a><a href="#abai">Абай өсиеттері</a><a href="#dictionary">Сөздік</a><a href="#practice">Іс жүзінде</a><a href="#ideas">Менің идеям</a><a href="#diary">Күнделік</a></div><small>Интерактивті цифрлық концепт · QÚNDYLYQ</small></footer>
+
+<div id="modal" class="modal" aria-hidden="true"><div class="modal-backdrop" onclick="closeModal()"></div><div class="modal-panel"><button class="modal-close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<div id="toast" class="toast"></div>
+<div id="aiDock" class="ai-dock"><button onclick="openAI()"><span class="ai-avatar">Q</span><span><b>AI-QUNDY</b><small>Көмек керек пе?</small></span><span>↗</span></button></div>
+<script src="script.js"></script>
+</body>
+</html>
